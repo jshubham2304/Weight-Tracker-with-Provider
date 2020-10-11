@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton.extended(
-        heroTag: "CHECKOUT_EXTENDED",
         backgroundColor: Colors.black,
         onPressed: () {
           newTaskModalBottomSheet(context);

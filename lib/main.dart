@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
 }
@@ -45,17 +44,6 @@ class HomePage extends StatelessWidget {
               break;
           }
         },
-      ),
-    );
-  }
-}
-
-class Splash extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      child: Center(
-        child: Text("Splash Screen"),
       ),
     );
   }
